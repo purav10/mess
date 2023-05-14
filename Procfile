@@ -1,2 +1,1 @@
-release:python manage.py migrate
-web: gunicorn messWebsite.wsgi 
+web: gunicorn 'messWebsite.wsgi' 
