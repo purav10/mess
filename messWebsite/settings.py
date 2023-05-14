@@ -65,7 +65,10 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "home.context_processors.base",
-                "django.template.context_processors.media"
+                "django.template.context_processors.media",
+                "django.template.context_processors.static",
+                "django.template.context_processors.i18n",
+
             ],
         },
     },
@@ -149,7 +152,7 @@ LOGIN_EXEMPT_URLS = ["/admin/*"]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
 
