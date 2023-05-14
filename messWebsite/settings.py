@@ -16,9 +16,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG=True
 
-ALLOWED_HOSTS = ['mess-production.up.railway.app']
+ALLOWED_HOSTS = ['mess-production.up.railway.app','*']
 
 
 # Application definition
@@ -171,5 +171,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_USE_SSL = False
-EMAIL_HOST_USER = 'me210003039@iiti.ac.in'
+EMAIL_HOST_USER = 'ce210004009@iiti.ac.in'
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
